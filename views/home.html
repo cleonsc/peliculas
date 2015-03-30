@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="es" ng-app="peliculas">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/styles/images/favicon.ico" />
+    <title>Peliculas 1.0</title>
+    <link href="/styles/bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />      
+    <link href="/styles/bootstrap-3.2.0-dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />      
+    <link href="/styles/estilos.css" rel="stylesheet" type="text/css" />      
+</head>
+<body ng-controller="MainController">
+    <div id="wrapper">
+        <div class="overlay"></div>
+
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Accion</a>
+                </li>
+                <li>
+                    <a href="#">Romanticas</a>
+                </li>
+                <li>
+                    <a href="#">Humor</a>
+                </li>
+                <li>
+                    <a href="#">Documentales</a>
+                </li>
+             
+                <li>
+                    <a href="#">Ciencia Ficción</a>
+                </li>
+                <li>
+                    <a href="#">Terror</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+            <div class="container">
+                <div ng-view=""></div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+
+
+    <script src="/js/angular.min.js" type="text/javascript"></script>
+    <script src="/js/angular-route.min.js" type="text/javascript"></script>
+    
+    <script>
+        var miAplicacion = angular.module('peliculas', []);
+    </script>
+    <script src="../controller/controllers.js"></script>
+    <script src="../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../styles/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="../js/nav.js"></script>
+</body>
+</html>

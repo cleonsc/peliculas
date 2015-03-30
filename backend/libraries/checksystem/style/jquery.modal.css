@@ -1,0 +1,172 @@
+/*
+ * jQuery UI Dialog 1.8.18
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Dialog#theming
+*/
+.ui-dialog { 
+    position: absolute; 
+    overflow: hidden; 
+    border:1px solid dimgray; 
+    background-color:#FFF; 
+    -moz-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow:0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+    z-index: 99999; 
+}
+.ui-dialog .ui-dialog-titlebar { padding: 0.5em; position: relative; font-weight:bold; }
+.ui-dialog .ui-dialog-title { margin: .1em 16px .1em 0; } 
+.ui-dialog-title { 
+    font-size: 1em; 
+    color: #9E222C; 
+    text-transform:uppercase; 
+    font-weight:bold; 
+    margin:5px 0px; 
+} 
+
+.ui-dialog .ui-dialog-titlebar-close:hover{
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	color: black;
+}
+.ui-dialog .ui-dialog-titlebar-close { 
+    position: absolute; 
+    right: .3em; 
+    top: 50%; 
+    width: 19px; 
+    margin: -10px 0 0 0; 
+    padding: 1px;
+
+    text-align:center; 
+    text-decoration:none; 
+
+
+	height: 25px;
+    width: 25px;
+	background-color: transparent;
+	background-image: linear-gradient(top,rgba(255, 255, 255, .85),rgba(247, 247, 247, .85));
+	background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(255, 255, 255, .85)),to(rgba(247, 247, 247, .85)));
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #7F7F7F;
+
+}
+.ui-dialog .ui-dialog-titlebar-close span { display: block; margin: 1px; margin: -8px 0px 0px -8px; }
+.ui-dialog .ui-dialog-content { 
+    position: relative; 
+    border: 0; 
+    padding: .5em 1em; 
+    background: none; 
+    overflow: auto; 
+    zoom: 1; 
+    clear:both; 
+    min-height:60px !important; 
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    margin:5px;
+
+}
+/*.ui-dialog-content p { font-size:0.75em; margin:0px 0px 10px 0px;}*/
+.ui-dialog-content span { font-size:0.75em; }
+.ui-dialog .ui-dialog-buttonpane { 
+    text-align: left; 
+    border-width: 1px 0 0 0; 
+    background-image: none; 
+    /*margin: .5em 0 0 0; 
+    padding: .3em 1em .5em .4em;*/ 
+	padding: 5px;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: right; }
+/*.ui-dialog-buttonset { margin-bottom:12px; }*/
+.ui-dialog .ui-dialog-buttonpane button { 
+	color: #7F7F7F;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: transparent;
+	background-image: linear-gradient(top,rgba(255, 255, 255, .85),rgba(247, 247, 247, .85));
+	background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(255, 255, 255, .85)),to(rgba(247, 247, 247, .85)));
+
+    -moz-border-radius: 2px; 
+    -webkit-border-radius: 2px;	
+    border-radius:2px;
+    padding:5px; 
+
+    font-weight:bold; 
+    font-family:Arial; 
+    text-transform:uppercase; 
+    cursor:pointer;
+    margin: 2px 5px; 
+	width: 80px;
+	height: 28px;
+	font-size: 11px;
+}
+.ui-dialog .ui-dialog-buttonpane button:hover { 
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	color: black;
+}
+/*.ui-dialog .ui-dialog-buttonpane button:active { color:#1E1E1E; border:1px solid #E2E2E2; -moz-box-shadow: none; -webkit-box-shadow: none; -webkit-box-shadow:0 0 2px #BCBBBB inset; -moz-box-shadow:0 0 2px #BCBBBB inset; box-shadow:0 0 2px #BCBBBB inset; }
+*/
+
+.ui-dialog .ui-dialog-buttonpane .rojo:not(.gris) { 
+    background-color: #9E222C;
+	background-image: -webkit-linear-gradient(top,#CA222C,#9E222C);
+	background-image: -moz-linear-gradient(top,#CA222C,#9E222C);
+	background-image: linear-gradient(top,#CA222C,#9E222C);
+	border: 1px solid #9E222C; 
+    -moz-border-radius: 2px; 
+    -webkit-border-radius: 2px;	
+    border-radius:2px;
+    padding:5px; 
+
+    /*color:#FFF; */
+	color:white;
+    font-weight:bold; 
+    font-family:Arial; 
+    text-transform:uppercase; 
+    cursor:pointer;
+    margin: 2px 5px; 
+	width: 80px;
+	height: 28px;
+	font-size: 11px;
+
+}
+.ui-dialog .ui-dialog-buttonpane .rojo:hover  { 
+	color:white;
+	box-shadow:0 0 2px white inset;
+	-moz-box-shadow: 0 0 2px white inset;
+    -webkit-box-shadow: 0 0 2px white inset;
+}
+
+/*.ui-dialog .ui-dialog-buttonpane button.rojo:active { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }*/
+
+.ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
+.ui-draggable .ui-dialog-titlebar { cursor: move; }
+.ui-dialog-content button.rojo { background-color:#B10000; border:none; -moz-border-radius: 4px; -webkit-border-radius: 4px;	border-radius:4px; padding:8px 15px 7px 15px; color:#FFF; font-weight:bold; margin-top:5px; font-family:Arial; font-size:0.75em; text-transform:uppercase; cursor:pointer; }
+.ui-dialog-content button.rojo:hover { padding:7px 14px 6px 14px; border:1px solid #A90000; background-image: -moz-linear-gradient(top, #BE1C24, #B10000); /* Firefox 3.6 */ background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #BE1C24),color-stop(1, #B10000)); /* Safari & Chrome */ -moz-box-shadow: 0px 2px 3px -2px #000; -webkit-box-shadow: 0px 2px 3px -2px #000; box-shadow: 0px 2px 3px -2px #000; }
+.ui-dialog-content button.rojo:active { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+
+/* Overlays */
+.ui-widget-overlay { 
+	z-index: 9999;
+	opacity: 0.8;
+    position: absolute;
+    top:0;
+    right:0;
+/*    bottom: 0;
+    left: 0;*/
+    background: transparent url('./overlay_bg.png');  
+}
+/*.ui-widget-overlay { background: #aaaaaa 50% 50% repeat-x; opacity: .80;filter:Alpha(Opacity=80); }*/
+.ui-widget-shadow { margin: -8px 0 0 -8px; padding: 8px; background: #aaaaaa url(./ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+.ui-confirm-body{
+	/*text-transform: uppercase;*/
+	font-size: 0.75em;
+	font-weight: bold;
+	color: #767676;
+	letter-spacing: 0.05em;
+	text-align: center;
+	line-height: 1.5;
+}
