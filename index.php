@@ -53,12 +53,16 @@
                 </div>
             </div>
         </div> 
+        <script src="/js/angular.min.js" type="text/javascript"></script>
+        <script src="/js/angular-route.min.js" type="text/javascript"></script>
+        
         <script src="/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="/js/routing.js" type="text/javascript"></script>
         <script src="/styles/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
         <script>
             $(".btn").each(function () {
                 $(".btn").click(function () {
-                    window.location.href = "/views/home.html";
+                    window.location.href = "home.html";
                 });
             });
 

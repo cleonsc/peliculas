@@ -17,31 +17,31 @@
         <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
             <ul class="nav sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#">
+                    <a href="#home">
                         Inicio
                     </a>
                 </li>
                 <li>
-                    <a href="#">Accion</a>
+                    <a href="#/accion">Accion</a>
                 </li>
                 <li>
-                    <a href="#">Romanticas</a>
+                    <a href="#romanticas">Romanticas</a>
                 </li>
                 <li>
-                    <a href="#">Humor</a>
+                    <a href="#humor">Humor</a>
                 </li>
                 <li>
-                    <a href="#">Documentales</a>
+                    <a href="#documentales">Documentales</a>
                 </li>
              
                 <li>
-                    <a href="#">Ciencia Ficción</a>
+                    <a href="#cienciaFiccion">Ciencia Ficción</a>
                 </li>
                 <li>
-                    <a href="#">Terror</a>
+                    <a href="#terror">Terror</a>
                 </li>
                 <li>
-                    <a href="#">Contacto</a>
+                    <a href="#contacto">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -55,11 +55,10 @@
                 <span class="hamb-bottom"></span>
             </button>
             <div class="container">
+                <!-- Aca se cargan las vistas -->
                 <div ng-view=""></div>
             </div>
         </div>
-        <!-- /#page-content-wrapper -->
-
     </div>
 
 
@@ -73,5 +72,6 @@
     <script src="../js/jquery-1.11.1.min.js" type="text/javascript"></script>
     <script src="../styles/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
     <script src="../js/nav.js"></script>
+    <script src="../js/routing.js"></script>
 </body>
 </html>
