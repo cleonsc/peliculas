@@ -9,7 +9,7 @@
     <link href="/styles/index.css" rel="stylesheet" type="text/css" />      
 </head>
 <body>
-    <<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
         <!-- Overlay -->
         <div class="overlay"></div>
 
